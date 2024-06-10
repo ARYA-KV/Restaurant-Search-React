@@ -4,7 +4,7 @@ import axios from 'axios'
 
 
 export const fetchProducts=createAsyncThunk('products/fetchProducts',async()=>{
-    const result = await axios.get("https://rs-server-h0kb.onrender.com");
+    const result = await axios.get("https://rs-server-xati.onrender.com/restaurants");
     localStorage.setItem("allProducts",JSON.stringify(result.data))
     return result.data;
     
